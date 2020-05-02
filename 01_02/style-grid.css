@@ -1,3 +1,7 @@
 .site {
   display: grid;
+  /* grid-template-columns: 20px 5rem 20% 50vw; */
+  /* grid-template-columns: 5em 1fr 1fr; */
+  /* grid-template-columns: 1fr 2fr; */
+  grid-template-columns: repeat(4, 1fr 15px);
 }
