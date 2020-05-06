@@ -296,6 +296,6 @@ Basic responsive layout for all browsers:
 /*--------------------------------------------------------------
 CSS Grid layout for modern browsers:
 --------------------------------------------------------------*/
-
+/* Không check "display: grid", vì có thể 1 số browser ko cũ lắm, support version cũ grid */
 @supports (grid-area: auto) {
 }
