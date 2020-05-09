@@ -336,6 +336,20 @@ CSS Grid layout for modern browsers:
       grid-column: 1/4;
     }
 
+    .sidebar {
+      grid-column: 1/4; /* Với tư cách là 1 grid ITEM */
+      grid-row: 2/3; /* Với tư cách là 1 grid ITEM */
+
+      display: inherit; /* Với tư cách là 1 grid CONTAINER */
+      grid-template-columns: inherit; /* Với tư cách là 1 grid CONTAINER */
+
+      height: 0;
+    }
+
+    .twin:last-of-type {
+      grid-column: 3/4;
+    }
+
     .colophon {
       grid-column: 1/4;
     }
