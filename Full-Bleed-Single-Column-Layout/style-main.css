@@ -285,24 +285,26 @@ CSS Grid layout for modern browsers:
 --------------------------------------------------------------*/
 
 @supports (grid-area: auto) {
-  .site {
-    max-width: none;
-  }
+  @media screen and (min-width: 600px) {
+    .site {
+      max-width: none;
+    }
 
-  .main-area > *,
-  .colophon {
-    display: grid;
-    grid-template-columns: 1fr repeat(2, minmax(auto, 25em)) 1fr;
-  }
+    .main-area > *,
+    .colophon {
+      display: grid;
+      grid-template-columns: 1fr repeat(2, minmax(auto, 25em)) 1fr;
+    }
 
-  .splash-content,
-  ul,
-  .more-content {
-    grid-column: 2/4;
-  }
+    .splash-content,
+    ul,
+    .more-content {
+      grid-column: 2/4;
+    }
 
-  .twin,
-  aside {
-    grid-column: span 2;
+    .twin,
+    aside {
+      grid-column: span 2;
+    }
   }
 }
