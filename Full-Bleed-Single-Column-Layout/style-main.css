@@ -285,5 +285,12 @@ CSS Grid layout for modern browsers:
 --------------------------------------------------------------*/
 
 @supports (grid-area: auto) {
-  /*  */
+  .site {
+    max-width: none;
+  }
+
+  .main-area > *,
+  .colophon {
+    display: grid;
+  }
 }
