@@ -237,11 +237,11 @@ CSS Grid layout for wider screens, when browser supports grid:
     }
 
     .double {
-      grid-row: span 3;
+      grid-row: span 3; /* Khi có thêm class này thì nó chiếm 3 dòng */
     }
 
     .double .card {
-      display: block;
+      display: block; /* Khi có class double bên ngoài, bên trong ko nên display: grid nữa, vì có đủ chỗ, nên để block cho nó rớt xuống! */
     }
   }
 }
