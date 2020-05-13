@@ -293,6 +293,7 @@ CSS Grid layout for modern browsers:
     .main-area > *,
     .colophon {
       display: grid;
+      /* Mục đích phải có 4 cột (2 cột ngoài rìa trái/phải bằng nhau để đẩy nội dung vô) */
       grid-template-columns: 1fr repeat(2, minmax(auto, 25em)) 1fr;
     }
 
