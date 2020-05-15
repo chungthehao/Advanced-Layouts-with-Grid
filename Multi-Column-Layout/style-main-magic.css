@@ -343,7 +343,7 @@ CSS Grid layout for modern browsers:
       display: inherit; /* Với tư cách là 1 grid CONTAINER */
       grid-template-columns: inherit; /* Với tư cách là 1 grid CONTAINER */
 
-      height: 0;
+      height: 0; /* Lợi dụng overflow của nó để hiện nội dung 2 bên, mà ko có height để ko bị khoảng trống empty ở giữa */
     }
 
     .twin:last-of-type {
