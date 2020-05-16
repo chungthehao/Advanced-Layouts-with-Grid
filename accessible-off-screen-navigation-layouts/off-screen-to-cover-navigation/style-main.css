@@ -312,6 +312,27 @@ CSS Grid layout for wider screens, when browser supports grid:
       grid-area: footer;
     }
 
+    .main-nav {
+      grid-column: 1;
+      grid-row: 1/5;
+
+      position: relative;
+
+      width: 12em;
+    }
+
+    .main-nav ul {
+      flex-direction: column;
+    }
+
+    .trigger {
+      display: block;
+
+      position: fixed;
+      top: 1.5em;
+      left: 14.5em;
+    }
+
     .cards {
       margin: 0 auto;
       padding: 1em;
