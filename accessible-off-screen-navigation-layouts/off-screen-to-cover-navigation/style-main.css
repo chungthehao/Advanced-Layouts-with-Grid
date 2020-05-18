@@ -385,6 +385,7 @@ CSS Grid layout for wider screens, when browser supports grid:
   @media screen and (min-width: 78em) {
     .site {
       grid-template-columns: auto 15em;
+      /* Ko cần đn lại grid-area của từng item, vì đã kế thừa từ min-width: 27em rồi */
       grid-template-areas:
         "header header"
         "main sidebar"
