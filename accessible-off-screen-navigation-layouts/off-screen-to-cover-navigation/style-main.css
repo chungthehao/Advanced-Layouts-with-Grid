@@ -378,6 +378,7 @@ CSS Grid layout for wider screens, when browser supports grid:
     }
 
     .double .card {
+      /* Để bỏ thuộc tính display: grid, để các elements stack lên nhau */
       display: block;
     }
   }
