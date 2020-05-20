@@ -374,6 +374,7 @@ CSS Grid layout for wider screens, when browser supports grid:
     }
 
     .double {
+      /* Chiếm 3 hàng */
       grid-row: span 3;
     }
 
