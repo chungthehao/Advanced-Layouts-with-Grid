@@ -327,6 +327,12 @@ CSS Grid layout for wider screens, when browser supports grid:
 
     .main-nav ul {
       flex-direction: column;
+      display: none;
+      position: fixed;
+    }
+
+    .reveal .main-nav ul {
+      display: flex;
     }
 
     .trigger {
