@@ -327,7 +327,7 @@ CSS Grid layout for wider screens, when browser supports grid:
 
     .main-nav ul {
       flex-direction: column;
-      display: none;
+      display: none; /* Để lúc chưa có class 'reveal' (menu chưa mở), thì ko tab vô mấy link của menu */
       position: fixed;
     }
 
