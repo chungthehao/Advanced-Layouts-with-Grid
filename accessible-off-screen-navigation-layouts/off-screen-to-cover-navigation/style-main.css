@@ -316,7 +316,7 @@ CSS Grid layout for wider screens, when browser supports grid:
       grid-column: 1;
       grid-row: 1/5;
 
-      position: relative;
+      position: relative; /* Để tách ra khỏi normal flow của page (layer riêng), dùng đc thuộc tính left */
       width: 12em;
       left: -13em;
     }
