@@ -63,4 +63,5 @@ SITE.addEventListener(
   true
 );
 
+// Transition vừa kết thúc (trong removeMenu có check menu đang on hoặc off) thì remove class 'open' ra khỏi 'main-nav'
 SITE.addEventListener("transitionend", removeMenu, false);
