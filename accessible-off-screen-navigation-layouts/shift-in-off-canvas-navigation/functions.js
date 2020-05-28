@@ -33,6 +33,7 @@ function catchFocus() {
 }
 
 function removeMenu() {
+  // Phân biệt trường hợp menu đang đóng hay mở, vì hàm này đưa vào event "transitionend", có 2 trường hợp.
   if (TRIGGER.getAttribute("aria-expanded") == "false") {
     REVEAL.classList.remove("open"); // cause the menu ul to disappear
   }
