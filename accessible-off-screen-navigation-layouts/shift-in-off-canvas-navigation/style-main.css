@@ -380,7 +380,7 @@ CSS Grid layout for wider screens, when browser supports grid:
     }
 
     .double {
-      grid-row: span 3;
+      grid-row: span 3; /* chiếm 3 hàng liên tiếp, từ vị trí default */
     }
 
     .double .card {
