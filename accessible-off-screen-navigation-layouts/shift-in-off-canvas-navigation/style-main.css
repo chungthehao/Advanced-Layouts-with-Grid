@@ -372,7 +372,7 @@ CSS Grid layout for wider screens, when browser supports grid:
       display: grid;
       grid-template-columns: repeat(2, 25em);
       grid-gap: 1em;
-      justify-content: center;
+      justify-content: center; /* giống giống flex, căn giữa các grid items */
     }
 
     .card {
