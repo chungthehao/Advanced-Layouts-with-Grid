@@ -361,7 +361,7 @@ CSS Grid layout for wider screens, when browser supports grid:
 
     .cards a:focus,
     .cards a:hover {
-      outline: 1px solid hsl(0, 0%, 80%);
+      outline: 1px solid hsl(0, 0%, 80%); /* dùng outline, ko dùng border để tránh ảnh hưởng width */
     }
   }
 
