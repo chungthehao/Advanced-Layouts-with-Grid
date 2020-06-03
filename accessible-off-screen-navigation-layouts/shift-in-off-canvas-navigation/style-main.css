@@ -285,6 +285,7 @@ Footer:
 /*--------------------------------------------------------------
 CSS Grid layout for wider screens, when browser supports grid:
 --------------------------------------------------------------*/
+/* Ko dùng display: grid, vì để chắc chắn support version grid mới */
 @supports (grid-area: auto) {
   @media screen and (min-width: 27em) {
     .site {
