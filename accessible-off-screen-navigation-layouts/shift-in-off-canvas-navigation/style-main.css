@@ -293,7 +293,7 @@ CSS Grid layout for wider screens, when browser supports grid:
 @supports (grid-area: auto) {
   @media screen and (min-width: 27em) {
     .site {
-      position: relative;
+      position: relative; /* Để dùng left, kết hợp overflow-x: hidden để xê dịch toàn viewport */
       left: -14em;
       overflow-x: hidden;
       display: grid;
