@@ -303,7 +303,7 @@ CSS Grid layout for wider screens, when browser supports grid:
         "nav main"
         "nav sidebar"
         "nav footer";
-      transition: left 0.6s;
+      transition: left 0.6s; /* Để sự dịch chuyển left ra vào mượt mà trong 0.6s */
     }
 
     .reveal {
