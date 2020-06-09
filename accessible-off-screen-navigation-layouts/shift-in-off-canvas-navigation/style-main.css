@@ -44,7 +44,7 @@ button,
 input,
 select,
 textarea {
-  font-family: 'Source Sans Pro', 'Helvetica', 'Arial', sans-serif;
+  font-family: "Source Sans Pro", "Helvetica", "Arial", sans-serif;
   font-size: 18px;
   line-height: 1.5;
 }
@@ -84,7 +84,7 @@ address {
 
 pre {
   display: inline-block;
-  font-family: 'Courier 10 Pitch', Courier, monospace;
+  font-family: "Courier 10 Pitch", Courier, monospace;
   color: #ddca7e;
   background: #282c34;
   padding: 0.5em 0.8em;
@@ -95,7 +95,7 @@ code,
 kbd,
 tt,
 var {
-  font: 15px Monaco, Consolas, 'Andale Mono', 'DejaVu Sans Mono', monospace;
+  font: 15px Monaco, Consolas, "Andale Mono", "DejaVu Sans Mono", monospace;
 }
 
 abbr,
@@ -268,7 +268,11 @@ Footer:
 
 .colophon {
   padding: 2em;
-  background: hsl(0, 0%, 10%);
+  background: hsl(
+    0,
+    0%,
+    10%
+  ); /* hsl, kiểu định nghĩa màu gần với người hơn, dễ mường tượng hơn */
   color: white;
   text-align: center;
 }
@@ -285,20 +289,21 @@ Footer:
 /*--------------------------------------------------------------
 CSS Grid layout for wider screens, when browser supports grid:
 --------------------------------------------------------------*/
+/* Ko dùng display: grid, vì để chắc chắn support version grid mới */
 @supports (grid-area: auto) {
   @media screen and (min-width: 27em) {
     .site {
-      position: relative;
+      position: relative; /* Để dùng left, kết hợp overflow-x: hidden để xê dịch toàn viewport */
       left: -14em;
-      overflow-x: hidden;
+      overflow-x: hidden; /* Làm tràn viewport rồi hidden để dịch */
       display: grid;
       grid-template-columns: 15em calc(100% - 1em);
       grid-template-areas:
-        'nav header'
-        'nav main'
-        'nav sidebar'
-        'nav footer';
-      transition: left 0.6s;
+        "nav header"
+        "nav main"
+        "nav sidebar"
+        "nav footer";
+      transition: left 0.6s; /* Để sự dịch chuyển left ra vào mượt mà trong 0.6s */
     }
 
     .reveal {
@@ -393,9 +398,9 @@ CSS Grid layout for wider screens, when browser supports grid:
       /* tổng lại thì độ rộng là 100% + 14em, lọt ra ngoài viewport, rồi dùng overflow-x: hidden */
       grid-template-columns: 15em calc(100% - 1em - 15em) 15em;
       grid-template-areas:
-        'nav header header'
-        'nav main sidebar'
-        'nav footer footer';
+        "nav header header"
+        "nav main sidebar"
+        "nav footer footer";
     }
   }
 }
