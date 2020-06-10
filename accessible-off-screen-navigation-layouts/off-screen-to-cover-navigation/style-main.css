@@ -44,7 +44,7 @@ button,
 input,
 select,
 textarea {
-  font-family: "Source Sans Pro", "Helvetica", "Arial", sans-serif;
+  font-family: 'Source Sans Pro', 'Helvetica', 'Arial', sans-serif;
   font-size: 18px;
   line-height: 1.5;
 }
@@ -84,7 +84,7 @@ address {
 
 pre {
   display: inline-block;
-  font-family: "Courier 10 Pitch", Courier, monospace;
+  font-family: 'Courier 10 Pitch', Courier, monospace;
   color: #ddca7e;
   background: #282c34;
   padding: 0.5em 0.8em;
@@ -95,7 +95,7 @@ code,
 kbd,
 tt,
 var {
-  font: 15px Monaco, Consolas, "Andale Mono", "DejaVu Sans Mono", monospace;
+  font: 15px Monaco, Consolas, 'Andale Mono', 'DejaVu Sans Mono', monospace;
 }
 
 abbr,
@@ -290,10 +290,10 @@ CSS Grid layout for wider screens, when browser supports grid:
     .site {
       display: grid;
       grid-template-areas:
-        "header"
-        "main"
-        "sidebar"
-        "footer";
+        'header'
+        'main'
+        'sidebar'
+        'footer';
     }
 
     .masthead {
@@ -344,7 +344,7 @@ CSS Grid layout for wider screens, when browser supports grid:
     }
 
     .reveal .trigger {
-      left: 14.5em;
+      left: 14.5em; /* Có class .reveal tức là menu đang mở, dịch left */
     }
 
     .cards {
@@ -396,9 +396,9 @@ CSS Grid layout for wider screens, when browser supports grid:
       grid-template-columns: auto 15em;
       /* Ko cần đn lại grid-area của từng item, vì đã kế thừa từ min-width: 27em rồi */
       grid-template-areas:
-        "header header"
-        "main sidebar"
-        "footer footer";
+        'header header'
+        'main sidebar'
+        'footer footer';
     }
   }
 }
