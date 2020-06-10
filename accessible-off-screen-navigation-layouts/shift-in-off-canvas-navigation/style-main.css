@@ -267,7 +267,7 @@ Footer:
 --------------------------------------------------------------*/
 
 .colophon {
-  padding: 2em;
+  padding: 2em; /* Đơn vị em, tham khảo tới đơn vị của elments cha */
   background: hsl(
     0,
     0%,
