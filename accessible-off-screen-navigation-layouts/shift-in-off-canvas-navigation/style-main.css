@@ -311,7 +311,7 @@ CSS Grid layout for wider screens, when browser supports grid:
     }
 
     .masthead {
-      grid-area: header;
+      grid-area: header; /* Chỉ ra chọn area nào sau khi đã quy định ở grid-template-areas */
     }
 
     .main-area {
